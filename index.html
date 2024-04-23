@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="input-div">
+                <h2>Sentence Drawer</h2>
+                <input type="text" id="sentence-input" class="sentence-input" placeholder="Enter your sentence" name="sentence-input">
+                <button type="button" class="btn" onclick="drawSentence()">Draw</button>
+            </div>
+            <div class="canvas-container">
+                <canvas id="canvas">
+                </canvas>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script>
+            window.onresize = function() { prepareGird(); }
+            window.onload = function() { prepareGird(); drawSentence(); }
+        </script>
+    </body=>
+</html>
